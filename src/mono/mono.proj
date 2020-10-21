@@ -68,6 +68,7 @@
       <_MonoBuildParams Include="/v:minimal" />
       <_MonoBuildParams Condition="$(MonoEnableLLVM) == true" Include="/p:MONO_ENABLE_LLVM=true" />
       <_MonoBuildParams Condition="$(MonoEnableLLVM) == true" Include="/p:MONO_EXTERNAL_LLVM_CONFIG=&quot;&quot;$(MonoLLVMDir)\bin\llvm-config.exe&quot;&quot;" />
+       <_MonoConfigureParams Condition="'$(MonoCoreGC)' == 'true'" Include="--with-coregc=yes" />
     </ItemGroup>
     <PropertyGroup>
       <_MonoBuildPlatform Condition="'$(Platform)' == 'x64'">x64</_MonoBuildPlatform>
