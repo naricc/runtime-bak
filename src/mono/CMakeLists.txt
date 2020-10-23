@@ -80,6 +80,8 @@ else()
   message(FATAL_ERROR "Building without -DENABLE_NETCORE=1 is not supported.")
 endif()
 
+
+
 # Dependencies between options
 if(DISABLE_ASSEMBLY_REMAPPING)
   set(DISABLE_DESKTOP_LOADER 1)
@@ -544,3 +546,5 @@ add_subdirectory(mono)
 
 configure_file(cmake/config.h.in config.h)
 configure_file(cmake/eglib-config.h.cmake.in mono/eglib/eglib-config.h)
+
+
