@@ -290,7 +290,7 @@ elseif(HOST_LINUX)
 set(OS_LIBS pthread m dl)
 endif()
 
-add_library(monosgen-objects OBJECT "${eglib_sources};${metadata_sources};${utils_sources};${sgen_sources};${coregc_sources}${icu_shim_sources};${eventpipe_sources};${mini_sources}")
+add_library(monosgen-objects OBJECT "${eglib_sources};${metadata_sources};${utils_sources};${sgen_sources};${coregc_sources};${icu_shim_sources};${eventpipe_sources};${mini_sources}")
 add_library(monosgen-static STATIC $<TARGET_OBJECTS:monosgen-objects>)
 set_target_properties(monosgen-static PROPERTIES OUTPUT_NAME monosgen-2.0)
 if(NOT DISABLE_LIBS)

@@ -58,7 +58,7 @@ option (ENABLE_PERFTRACING "Enables support for eventpipe library")
 option (ENABLE_INTERP_LIB "Enable separate interpreter library")
 option (ENABLE_LAZY_GC_THREAD_CREATION "Enable lazy runtime thread creation, embedding host must do it explicitly")
 option (ENABLE_WERROR "Compile with -Werror")
-option (ç "Use the CoreCLR Garbage Collector")
+option (HAVE_CORE_GC "Use the CoreCLR Garbage Collector")
 
 set (GC_SUSPEND "default" CACHE STRING "GC suspend method (default, preemptive, coop, hybrid)")
 set (ENABLE_MINIMAL "" CACHE STRING "Set many DISABLE_ options at once. Comma-separated list of lowercase DISABLE_ options ie. 'jit,simd' etc.")
