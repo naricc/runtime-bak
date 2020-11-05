@@ -23,11 +23,13 @@ include_directories(
 include(../eglib/CMakeLists.txt)
 include(../utils/CMakeLists.txt)
 include(../metadata/CMakeLists.txt)
+
 if (HAVE_CORE_GC)
   include(../coregc/CMakeLists.txt)
 else()
   include(../sgen/CMakeLists.txt)
 endif()
+
 include(../eventpipe/CMakeLists.txt)
 
 # ICU

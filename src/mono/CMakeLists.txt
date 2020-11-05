@@ -42,7 +42,7 @@ function(process_enable_minimal)
 endfunction()
 
 if(ENABLE_MINIMAL)
-  process_enable_minimal()
+  process_enable_ minimal()
 endif()
 
 execute_process(
