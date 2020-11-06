@@ -15,7 +15,13 @@ include_directories(
   ${CMAKE_SOURCE_DIR}/
   ${PROJECT_SOURCE_DIR}/../
   ${PROJECT_SOURCE_DIR}/../eglib
-  ${PROJECT_SOURCE_DIR}/../sgen)
+  )
+
+if (HAVE_CORE_GC)
+  include_directories(${PROJECT_SOURCE_DIR}/../coregc)
+else()
+  include_directories(${PROJECT_SOURCE_DIR}/../sgen)
+endif()
 
 #
 # SUBDIRS
